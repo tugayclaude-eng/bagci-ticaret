@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bağcı Ticaret - Alışverişe Başla</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Animasyonlu Arka Plan -->
+  <div class="bg-animation"></div>
+
+  <!-- Üst Bar -->
+  <div class="ust-bar">
+    <div class="ust-bar-sol">
+      <span>🚀 Ücretsiz kargo fırsatları!</span>
+    </div>
+    <div class="ust-bar-sag">
+      <a href="#"><i class="fas fa-phone"></i> 0534 661 2200</a>
+      <a href="#"><i class="fas fa-map-marker-alt"></i> Bursa Kayapa</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="logo">BAĞCI TİCARET</div>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> Ana Sayfa</a></li>
+        <li><a href="urunler.html"><i class="fas fa-th"></i> Ürünler</a></li>
+        <li><a href="sepet.html" class="sepet-btn"><i class="fas fa-shopping-cart"></i> Sepet (<span id="sepet-sayisi">0</span>)</a></li>
+        <li><a href="giris.html"><i class="fas fa-user"></i> Giriş Yap</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Yeni Sezon Ürünleri</h1>
+      <p>Binlerce ürün ile alışverişin keyfini çıkarın</p>
+      <a href="urunler.html" class="btn">Alışverişe Başla</a>
+      <a href="#urunler" class="btn btn-outline">Keşfet</a>
+    </div>
+  </section>
+
+  <!-- Kategoriler -->
+  <section class="kategoriler">
+    <h2 class="scroll-animate">Kategoriler</h2>
+    <div class="kategori-grid">
+      <div class="kategori-kart scroll-animate">
+        <div class="kategori-ikon">👕</div>
+        <div class="kategori-ad">Giyim</div>
+      </div>
+      <div class="kategori-kart scroll-animate">
+        <div class="kategori-ikon">👟</div>
+        <div class="kategori-ad">Ayakkabı</div>
+      </div>
+      <div class="kategori-kart scroll-animate">
+        <div class="kategori-ikon">👜</div>
+        <div class="kategori-ad">Çanta</div>
+      </div>
+      <div class="kategori-kart scroll-animate">
+        <div class="kategori-ikon">⌚</div>
+        <div class="kategori-ad">Aksesuar</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner -->
+  <section class="banner-section">
+    <div class="banner-grid">
+      <div class="banner scroll-animate">
+        <div class="banner-icerik">
+          <h3>Yaz İndirimi</h3>
+          <p>Tüm ürünlerde %50'ye varan indirim</p>
+        </div>
+        <a href="urunler.html" class="btn">Alışveriş Yap</a>
+      </div>
+      <div class="banner scroll-animate">
+        <div class="banner-icerik">
+          <h3>Yeni Koleksiyon</h3>
+          <p>En trend ürünler mağazamızda</p>
+        </div>
+        <a href="urunler.html" class="btn">Keşfet</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ürünler -->
+  <section class="urunler-section" id="urunler">
+    <h2 class="scroll-animate">Öne Çıkan Ürünler</h2>
+    <div id="urun-listesi" class="urun-grid"></div>
+  </section>
+
+  <!-- Özellikler -->
+  <section class="ozellikler">
+    <div class="ozellik-grid">
+      <div class="ozellik-item scroll-animate">
+        <div class="ozellik-ikon">🚚</div>
+        <div class="ozellik-baslik">Ücretsiz Kargo</div>
+        <div class="ozellik-aciklama">150 TL ve üzeri siparişlerde</div>
+      </div>
+      <div class="ozellik-item scroll-animate">
+        <div class="ozellik-ikon">🔒</div>
+        <div class="ozellik-baslik">Güvenli Ödeme</div>
+        <div class="ozellik-aciklama">256-bit SSL şifreleme</div>
+      </div>
+      <div class="ozellik-item scroll-animate">
+        <div class="ozellik-ikon">↩️</div>
+        <div class="ozellik-baslik">Kolay İade</div>
+        <div class="ozellik-aciklama">14 gün içinde ücretsiz iade</div>
+      </div>
+      <div class="ozellik-item scroll-animate">
+        <div class="ozellik-ikon">📞</div>
+        <div class="ozellik-baslik">7/24 Destek</div>
+        <div class="ozellik-aciklama">Her zaman yanınızdayız</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-Grid">
+      <div class="footer-col">
+        <h4>Hakkımızda</h4>
+        <p style="color: var(--text-light); font-size: 14px; line-height: 1.8;">
+          Bağcı Ticaret, 2020 yılından bu yana kaliteli ürünler sunmaktadır.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Hızlı Erişim</h4>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="urunler.html">Ürünler</a></li>
+          <li><a href="sepet.html">Sepetim</a></li>
+          <li><a href="giris.html">Giriş Yap</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kategoriler</h4>
+        <ul>
+          <li><a href="#">Giyim</a></li>
+          <li><a href="#">Ayakkabı</a></li>
+          <li><a href="#">Çanta</a></li>
+          <li><a href="#">Aksesuar</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>İletişim</h4>
+        <ul>
+          <li><a href="#"><i class="fas fa-phone"></i> 0534 661 2200</a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i> tugaybgc@gmail.com</a></li>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i> Bursa Kayapa</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Mağazam. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tüm Ürünler - Bağcı Ticaret</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Animasyonlu Arka Plan -->
+  <div class="bg-animation"></div>
+
+  <!-- Üst Bar -->
+  <div class="ust-bar">
+    <div class="ust-bar-sol">
+      <span>🚀 Ücretsiz kargo fırsatları!</span>
+    </div>
+    <div class="ust-bar-sag">
+      <a href="#"><i class="fas fa-phone"></i> 0534 661 2200</a>
+      <a href="#"><i class="fas fa-map-marker-alt"></i> Bursa Kayapa</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="logo">BAĞCI TİCARET</div>
+      <ul class="nav-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> Ana Sayfa</a></li>
+        <li><a href="urunler.html"><i class="fas fa-th"></i> Ürünler</a></li>
+        <li><a href="sepet.html" class="sepet-btn"><i class="fas fa-shopping-cart"></i> Sepet (<span id="sepet-sayisi">0</span>)</a></li>
+        <li><a href="giris.html"><i class="fas fa-user"></i> Giriş Yap</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Ürünler -->
+  <section class="urunler-section">
+    <h2 class="scroll-animate">Tüm Ürünler</h2>
+    <div id="urun-listesi" class="urun-grid"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-Grid">
+      <div class="footer-col">
+        <h4>Hakkımızda</h4>
+        <p style="color: var(--text-light); font-size: 14px; line-height: 1.8;">
+          Bağcı Ticaret, 2020 yılından bu yana kaliteli ürünler sunmaktadır.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Hızlı Erişim</h4>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="urunler.html">Ürünler</a></li>
+          <li><a href="sepet.html">Sepetim</a></li>
+          <li><a href="giris.html">Giriş Yap</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kategoriler</h4>
+        <ul>
+          <li><a href="#">Giyim</a></li>
+          <li><a href="#">Ayakkabı</a></li>
+          <li><a href="#">Çanta</a></li>
+          <li><a href="#">Aksesuar</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>İletişim</h4>
+        <ul>
+          <li><a href="#"><i class="fas fa-phone"></i> 0534 661 2200</a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i> tugaybgc@gmail.com</a></li>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i> Bursa Kayapa</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Mağazam. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
