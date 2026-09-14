@@ -8,17 +8,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Animasyonlu Arka Plan -->
-  <div class="bg-animation"></div>
-
-  <!-- Üst Bar -->
+  <!-- Üst Bilgi Barı -->
   <div class="ust-bar">
     <div class="ust-bar-sol">
-      <span>🚀 Ücretsiz kargo fırsatları!</span>
+      <a href="mailto:tugaybgc@gmail.com"><i class="fas fa-envelope"></i> tugaybgc@gmail.com</a>
+      <span><i class="fas fa-clock"></i> Pzt-Cmt 8.00 - 18.00</span>
     </div>
     <div class="ust-bar-sag">
-      <a href="#"><i class="fas fa-phone"></i> 0534 661 2200</a>
-      <a href="#"><i class="fas fa-map-marker-alt"></i> Bursa Kayapa</a>
+      <a href="tel:05346612200"><i class="fas fa-phone"></i> (0534) 661 2200</a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
     </div>
   </div>
 
@@ -30,26 +30,26 @@
         <span class="logo-text">TİCARET</span>
       </a>
       <ul class="nav-links">
-        <li><a href="index.html"><i class="fas fa-home"></i> Ana Sayfa</a></li>
-        <li><a href="urunler.html"><i class="fas fa-th"></i> Ürünler</a></li>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="urunler.html">Ürünler</a></li>
         <li><a href="sepet.html" class="sepet-btn"><i class="fas fa-shopping-cart"></i> Sepet (<span id="sepet-sayisi">0</span>)</a></li>
-        <li><a href="giris.html"><i class="fas fa-user"></i> Giriş Yap</a></li>
+        <li><a href="giris.html">Giriş Yap</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Ödeme -->
-  <main>
+  <main style="padding-top: 150px;">
     <div class="sepet-container">
-      <h2 class="sepet-baslik scroll-animate"><i class="fas fa-credit-card"></i> Ödeme</h2>
+      <h2 class="sepet-baslik scroll-animate">Ödeme</h2>
       
-      <div id="siparis-ozeti" style="background: linear-gradient(145deg, #1e1e32, #151528); padding: 2rem; border-radius: 20px; margin-bottom: 2rem; border: 1px solid var(--border);">
+      <div id="siparis-ozeti" style="background: var(--card-bg); padding: 2rem; border-radius: 8px; margin-bottom: 2rem; border: 1px solid var(--border);">
         <h3 style="margin-bottom: 1.5rem;"><i class="fas fa-receipt"></i> Sipariş Özeti</h3>
         <div id="ozet-listesi"></div>
         <div class="sepet-toplam" id="odeme-toplam">Toplam: 0 ₺</div>
       </div>
 
-      <form id="odeme-formu" style="background: linear-gradient(145deg, #1e1e32, #151528); padding: 2rem; border-radius: 20px; border: 1px solid var(--border);">
+      <form id="odeme-formu" style="background: var(--card-bg); padding: 2rem; border-radius: 8px; border: 1px solid var(--border);">
         <h3 style="margin-bottom: 1.5rem;"><i class="fas fa-truck"></i> Teslimat Bilgileri</h3>
         <div class="form-group">
           <label for="ad-soyad"><i class="fas fa-user"></i> Ad Soyad</label>
@@ -103,8 +103,42 @@
 
   <!-- Footer -->
   <footer>
+    <div class="footer-Grid">
+      <div class="footer-col">
+        <h4>Hakkımızda</h4>
+        <p style="color: var(--text-light); font-size: 14px; line-height: 1.8;">
+          Bağcı Ticaret, 2020 yılından bu yana kaliteli ürünler sunmaktadır.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Hızlı Erişim</h4>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="urunler.html">Ürünler</a></li>
+          <li><a href="sepet.html">Sepetim</a></li>
+          <li><a href="giris.html">Giriş Yap</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kategoriler</h4>
+        <ul>
+          <li><a href="#">Giyim</a></li>
+          <li><a href="#">Ayakkabı</a></li>
+          <li><a href="#">Çanta</a></li>
+          <li><a href="#">Aksesuar</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>İletişim</h4>
+        <ul>
+          <li><a href="tel:05346612200"><i class="fas fa-phone"></i> 0534 661 2200</a></li>
+          <li><a href="mailto:tugaybgc@gmail.com"><i class="fas fa-envelope"></i> tugaybgc@gmail.com</a></li>
+          <li><a href="#"><i class="fas fa-map-marker-alt"></i> Bursa Kayapa</a></li>
+        </ul>
+      </div>
+    </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Mağazam. Tüm hakları saklıdır.</p>
+      <p>&copy; 2026 Bağcı Ticaret. Tüm hakları saklıdır.</p>
     </div>
   </footer>
 
