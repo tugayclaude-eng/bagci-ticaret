@@ -166,7 +166,11 @@ async function urunleriGoster() {
 
   container.innerHTML = urunler.map((urun, index) => `
     <div class="urun-kart scroll-animate" style="animation-delay: ${index * 0.1}s" data-urun-id="${urun.id}">
-      <img src="${urun.resim_url || 'https://via.placeholder.com/300x280?text=Ürün'}" alt="${urun.ad}">
+      <img src="${urun.resim_url || ''}" alt="${urun.ad}" onerror="this.onerror=null;this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <div class="urun-placeholder" style="display:none;width:100%;height:280px;background:linear-gradient(135deg,#1a1a2e,#16213e);align-items:center;justify-content:center;flex-direction:column;gap:10px;border-radius:15px 15px 0 0;">
+        <div style="font-size:3rem;opacity:0.5;">👟</div>
+        <div style="color:#888;font-size:0.9rem;text-align:center;padding:0 15px;">${urun.ad}</div>
+      </div>
       ${urun.stok > 0 ? '<span class="urun-badge">Stokta</span>' : '<span class="urun-badge" style="background:linear-gradient(135deg,#999,#777);">Tükendi</span>'}
       <div class="urun-favori" onclick="favoriEkle(${urun.id})">
         <i class="far fa-heart"></i>
